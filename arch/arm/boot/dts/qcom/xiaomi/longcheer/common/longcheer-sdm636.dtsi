@@ -94,6 +94,51 @@
 
 &pm660_haptics {
 	qcom,actuator-type = "erm";
+	qcom,vmax-mv = <2800>;
+	qcom,play-rate-us = <5102>;
+
+	wf_0 {
+		/* CLICK */
+		qcom,wf-vmax-mv = <3600>;
+		qcom,wf-pattern = [3e 3e];
+		qcom,wf-brake-pattern = [02 01 00 00];
+		qcom,wf-play-rate-us = <5102>;
+	};
+	wf_1 {
+		/* DOUBLE CLICK */
+		qcom,wf-vmax-mv = <3600>;
+		qcom,wf-pattern = [7e 3e];
+		qcom,wf-brake-pattern = [03 01 01 00];
+		qcom,wf-play-rate-us = <5102>;
+	};
+	wf_2 {
+		/* TICK */
+		qcom,wf-vmax-mv = <3600>;
+		qcom,wf-pattern = [7e 3e];
+		qcom,wf-brake-pattern = [03 01 01 00];
+		qcom,wf-play-rate-us = <5102>;
+	};
+	wf_3 {
+		/* THUD */
+		qcom,wf-vmax-mv = <3600>;
+		qcom,wf-pattern = [3e 3e];
+		qcom,wf-brake-pattern = [02 01 00 00];
+		qcom,wf-play-rate-us = <5102>;
+	};
+	wf_4 {
+		/* POP */
+		qcom,wf-vmax-mv = <3600>;
+		qcom,wf-pattern = [3e 3e];
+		qcom,wf-brake-pattern = [02 01 00 00];
+		qcom,wf-play-rate-us = <5102>;
+	};
+	wf_5 {
+		/* HEAVY CLICK */
+		qcom,wf-vmax-mv = <3600>;
+		qcom,wf-pattern = [7e 7e 7e];
+		qcom,wf-brake-pattern = [03 03 01 00];
+		qcom,wf-play-rate-us = <5102>;
+	};
 };
 
 /* sdm636-mtp.dtsi diff */
